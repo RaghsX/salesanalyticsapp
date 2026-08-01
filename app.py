@@ -429,8 +429,9 @@ def upload_sales():
         }), 500
 
 
+create_database()
+logger.info("Database initialized")
+
 if __name__ == "__main__":
     logger.info("Application started")
-    create_database()
-    logger.info("Database initialized")
     app.run(debug=True)
